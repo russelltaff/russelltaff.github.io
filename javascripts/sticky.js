@@ -1,9 +1,18 @@
 $(document).ready(function(){
 
 
-  $('#github').hover(
-    function(){$(this).addClass('github-hover')},
-    function(){$(this).removeClass('github-hover')}
+  $('#social-icon-container #github').hover(
+    function()
+  {
+    $(this).addClass('test_a');
+  },
+    function() {
+    $(this).removeClass('test_a');
+  });
+
+  $('#social-icon-container #linkedin').hover(
+    function(){$(this).addClass('linkedin-hover')},
+    function(){$(this).removeClass('linkedin-hover')}
   );
 
   $(window).scroll(function(){
@@ -33,15 +42,6 @@ $(document).ready(function(){
       });
       $('#navigation-bar').removeAttr('style');
 
-    }
-  })
-
-  $(window).scroll(function(){
-    var scrollTop = 1774;
-    if($(window).scrollTop() >= scrollTop){
-      $('nav').css({
-        'box-shadow': '0px 3px 9px rgba(124,125,125, 0.7)'
-      })
     }
   })
 })
