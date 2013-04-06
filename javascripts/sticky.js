@@ -1,45 +1,34 @@
 $(document).ready(function(){
 
-
   $('#social-icon-container #github').hover(
-    function()
-  {
-    $(this).addClass('test_a');
-  },
-    function() {
-    $(this).removeClass('test_a');
-  });
-
-  $('#social-icon-container #linkedin').hover(
-    function(){$(this).addClass('linkedin-hover')},
-    function(){$(this).removeClass('linkedin-hover')}
-  );
+    function(){$(this).addClass('icon-hover');},
+    function() {$(this).removeClass('icon-hover');});
 
   $(window).scroll(function(){
-    var scrollTop = 566;
+    var scrollTop = 637;
     if($(window).scrollTop() >= scrollTop){
       // sticky nav
       $('nav').css({
         position : 'fixed',
         top : '0',
-        padding : '8px 0 20px'
+        padding : '0px 0 10px',
+        'text-align' : 'right'
       });
 
       // logo fade-in
-      $('a#logo-link').fadeIn('slow', function() {
+      $('a#logo-link').fadeIn('medium', function() {
         // Animation complete
       });
 
-      $('#navigation-bar').css({
-        bottom: 0,
-      });
+
     }
 
     if($(window).scrollTop() < scrollTop){
-      $('nav').removeAttr('style');
       $('a#logo-link').fadeOut('slow', function() {
         // Animation complete
       });
+      $('nav').removeAttr('style');
+
       $('#navigation-bar').removeAttr('style');
 
     }
