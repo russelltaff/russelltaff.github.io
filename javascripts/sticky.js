@@ -8,7 +8,7 @@ $(document).ready(function(){
   //     $(this).removeClass('icon-hover');
   //   }
   // );
-  $()
+  $('#portfolio-options span').click(filter_projects);
 
   $(window).scroll(function(){
     var scrollTop = 637;
@@ -40,3 +40,22 @@ $(document).ready(function(){
     }
   })
 })
+
+function filter_projects() {
+  $('.selected').removeClass('selected', 500);
+  $(this).addClass('selected', 300)
+  var id = $(this).attr('id').replace('_filter', '');
+  $('.project.in-view').hide('slide', {direction: 'right'}, 500).removeClass('in-view');
+  $('#'+id).addClass('in-view').delay(300).show('slide', {direction: 'left'}, 1000);
+}
+
+
+
+
+
+
+
+
+
+
+

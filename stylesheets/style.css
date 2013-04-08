@@ -307,6 +307,11 @@ a .hover {
 
 .project{
   margin-bottom: 150px;
+  display: none;
+}
+
+.project#grubmeet {
+  display: inline-block;
 }
 
 .section-title
@@ -340,6 +345,29 @@ a .hover {
     -webkit-background-clip: text;
      -moz-background-clip: text;
           background-clip: text;
+}
+
+#portfolio-options {
+  padding-bottom: 75px;
+}
+
+#portfolio-options h5 {
+  color: cyan;
+  font-family: 'Lato';
+  font-size: 20px;
+}
+
+#portfolio-options h5 span {
+  margin: 0 15px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+}
+
+.selected {
+  /*border-top: 2px solid red;*/
+  border-bottom: 2px solid red;
+  padding: 2px 1px;
 }
 
 .section-content
