@@ -1,8 +1,14 @@
 $(document).ready(function(){
 
-  $('#social-icon-container #github').hover(
-    function(){$(this).addClass('icon-hover');},
-    function() {$(this).removeClass('icon-hover');});
+  // $('#social-icon-container #github').hover(
+  //   function(){
+  //     $(this).addClass('icon-hover');
+  //   },
+  //   function() {
+  //     $(this).removeClass('icon-hover');
+  //   }
+  // );
+  $()
 
   $(window).scroll(function(){
     var scrollTop = 637;
