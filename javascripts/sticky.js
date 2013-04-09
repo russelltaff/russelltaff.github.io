@@ -1,13 +1,11 @@
 $(document).ready(function(){
 
-  // $('#social-icon-container #github').hover(
-  //   function(){
-  //     $(this).addClass('icon-hover');
-  //   },
-  //   function() {
-  //     $(this).removeClass('icon-hover');
-  //   }
-  // );
+  $('.photo_circle.duke').mouseenter(highlight_photo);
+  $('.photo_circle.duke').mouseleave(unhighlight_photo);
+  $('.photo_circle.ga').mouseenter(highlight_photo);
+  $('.photo_circle.ga').mouseleave(unhighlight_photo);
+  $('.photo_circle.new_york').mouseenter(highlight_map);
+  $('.photo_circle.new_york').mouseleave(unhighlight_map);
   $('#portfolio-options span').click(filter_projects);
 
   $(window).scroll(function(){
@@ -41,12 +39,29 @@ $(document).ready(function(){
   })
 })
 
+function highlight_photo() {
+  $(this).addClass('dukega_hover', 100);
+  $(this).children('h6').first().fadeIn('medium');
+}
+function unhighlight_photo() {
+  $(this).removeClass('dukega_hover', 100);
+  $(this).children('h6').first().fadeOut('med');
+}
+function highlight_map() {
+  $(this).addClass('map_hover', 200);
+  $(this).children('h6').first().fadeIn('medium');
+}
+function unhighlight_map() {
+  $(this).removeClass('map_hover', 200);
+  $(this).children('h6').first().fadeOut('medium');
+}
+
 function filter_projects() {
   $('.selected').removeClass('selected', 500);
   $(this).addClass('selected', 300)
   var id = $(this).attr('id').replace('_filter', '');
   $('.project.in-view').hide('slide', {direction: 'right'}, 500).removeClass('in-view');
-  $('#'+id).addClass('in-view').delay(300).show('slide', {direction: 'left'}, 1000);
+  $('#'+id).addClass('in-view').delay(300).show('slide', {direction: 'left'}, 900);
 }
 
 

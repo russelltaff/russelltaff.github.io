@@ -360,14 +360,18 @@ a .hover {
 #portfolio-options h5 span {
   margin: 0 15px;
   cursor: pointer;
-  color: white;
+  color: #585858;
   font-size: 16px;
+  padding-bottom: 2px;
 }
 
-.selected {
+#portfolio-options span.selected{
   /*border-top: 2px solid red;*/
-  border-bottom: 2px solid red;
-  padding: 2px 1px;
+  border-bottom: 2px solid cyan;
+  color: white;
+
+/*  border-left:  1px solid cyan;
+  border-right:  1px solid cyan;*/
 }
 
 .section-content
@@ -432,21 +436,27 @@ box-shadow: inset 0px 0px 20px rgba(0,0,0,0.9);
 }
 
 .photo_circle img{z-index: 0;}
-.section-content .photo_circle > h6{font-size: 16px; margin-top: 5em; font-family: 'Lato'; display: none;}
+.section-content .photo_circle > h6{
+  font-size: 16px;
+  margin-top: 5.0em;
+  font-family: 'Lato';
+  display: none;
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+  padding: 4px 0;
+}
 
 .photo_circle.duke{
   background: url("../images/duke_logo.png") center no-repeat #e8dee1;
   background-size: 90px 90px;
   -webkit-filter: grayscale(0.9);
 }
-.photo_circle.duke:hover{-webkit-filter: grayscale(0); background-color: white}
 
 .photo_circle.new_york
 {
-  background: url("http://maps.googleapis.com/maps/api/staticmap?center=10012&style=visibility:simplified&gamma:1.0&inverse_lightness:true&element:geometry.fill%7Chue:0x000000&zoom=11&maptype=terrain&size=400x400&markers=size:large%7Ccolor:red%7Clabel:NYC%7CNew+York,NY&sensor=false") center no-repeat #e8dee1;
+  background: url("http://maps.googleapis.com/maps/api/staticmap?center=10014&style=visibility:simplified&gamma:1.0&inverse_lightness:true&element:geometry.fill%7Chue:0x000000&zoom=11&maptype=terrain&size=400x400&markers=size:large%7Ccolor:red%7Clabel:NYC%7CNew+York,NY&sensor=false") center no-repeat #e8dee1;
   -webkit-filter: grayscale(0.9);
 }
-.photo_circle.new_york:hover{-webkit-filter: grayscale(0);}
 
 .photo_circle.ga
 {
@@ -454,7 +464,11 @@ box-shadow: inset 0px 0px 20px rgba(0,0,0,0.9);
   background-size: 90px 90px;
   -webkit-filter: grayscale(0.9);
 }
-.photo_circle.ga:hover{-webkit-filter: grayscale(0); background-color: white}
+
+
+.photo_circle.dukega_hover { -webkit-filter: grayscale(0); background-color: white}
+.photo_circle.map_hover { -webkit-filter: grayscale(0); }
+
 
 #new_york
 {
