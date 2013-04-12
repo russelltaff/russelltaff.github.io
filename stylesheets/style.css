@@ -310,7 +310,7 @@ a .hover {
   display: none;
 }
 
-.project#grubmeet {
+.project#first-class {
   display: inline-block;
 }
 
@@ -511,6 +511,12 @@ box-shadow: inset 0px 0px 20px rgba(0,0,0,0.9);
   color: #f7f7f7;
   line-height: 20px;
   padding-left: 5px;
+  margin-bottom: 25px;
+}
+
+.project-info-left a {
+  color: cyan;
+  font-size: 12px;
 }
 
 .project-images-right
@@ -518,6 +524,15 @@ box-shadow: inset 0px 0px 20px rgba(0,0,0,0.9);
   margin-left: 0px;
   display: inline-block;
   width: 55%;
+}
+
+#social .section-content h3{
+  font-family: 'Lato';
+  font-size: 24px;
+}
+
+#social .section-content a {
+
 }
 
 
