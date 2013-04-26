@@ -8,6 +8,7 @@ $(document).ready(function(){
   $('.photo_circle.new_york').mouseleave(unhighlight_map);
   $('#portfolio-options span').click(filter_projects);
 
+
   $(window).scroll(function(){
     var scrollTop = 637;
     if($(window).scrollTop() >= scrollTop){

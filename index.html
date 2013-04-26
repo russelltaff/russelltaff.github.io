@@ -10,6 +10,8 @@
   <script src='./javascripts/jquery-ui-1.10.2.custom.min.js'></script>
   <script src='./javascripts/parallax.js'></script>
   <script src='./javascripts/sticky.js'></script>
+  <script src="jquery.localscroll.js" type="text/javascript"></script>
+  <script src="jquery.scrollTo.js" type="text/javascript"></script>
 
 
 </head>
@@ -34,7 +36,7 @@
         <li id='logo'></li>
         <li id='first_nav'><a id='about_link' href="#about">ABOUT</a></li>
         <li><a href="#portfolio">WORK</a></li>
-        <li id='last_nav'><a href="#">CONTACT</a></li>
+        <li id='last_nav'><a href="#social">CONTACT</a></li>
       </ul>
     </nav>
     <div id='content-area'>
@@ -75,10 +77,44 @@
           </div>
 
           <div id='portfolio-options'>
-            <h5><span id='grubmeet_filter'>GRUBMEET</span>  <span id='ga_search_filter'>GA SEARCH ENGINE</span>  <span id='first-class_filter' class='selected' >FIRSTCLASS AIRLINES</span>  <span id='globetrotter_filter'>GLOBETROTTER</span></h5>
+            <h5><span id='cliquer_filter'>CLIQUER</span><span id='first-class_filter' class='selected' >FIRSTCLASS AIRLINES</span> <span id='grubmeet_filter'>GRUBMEET</span>  <span id='ga_search_filter'>GA SEARCH ENGINE</span>   <span id='globetrotter_filter'>GLOBETROTTER</span></h5>
           </div>
 
           <div class='section-content'>
+
+            <div class = 'project in-view' id='first-class'>
+              <div class = 'project-info-left'>
+                <div class='project-title'>
+                  <h1>FIRST CLASS AIRLINES</h1>
+                </div>
+
+                <div class='project-description'>
+                  <h6>This application handles both client-side and admin-side functionality for fake airline FirstClass. Three teammates and I worked to build out the web app which simulates some of the basic functions that an actual airline would utilize on its web sites. Our app allows admins to manage a plane inventory and flight schedule. Non-admin users are able to book flights and reserve seats using a nifty hand-made seat picking chart. To log in as an admin, use username 'admin@firstclass.com' & password 'x'.</h6>
+
+                  <a href='http://quiet-island-8862.herokuapp.com/'>FirstClass Airlines <img src='images/link.png' width='15px;'></a>
+                </div>
+              </div>
+              <div class='project-images-right'>
+                <img src="./images/first_class.png", height='400'>
+              </div>
+            </div>
+
+            <div class = 'project' id='cliquer'>
+              <div class = 'project-info-left'>
+                <div class='project-title'>
+                  <h1>CLIQUER</h1>
+                </div>
+
+                <div class='project-description'>
+                  <h6>Cliquer is your gateway to a more fulfilling social life. Cliquer allows you to propose plans within private social groups and view these plans in a feed of plan ideas from your best friends. No more ignored emails and texts, and no more having to dig through old emails to find out what your friends want to do. The Cliquer feed is all you need.</h6>
+                </div>
+
+              </div>
+              <div class='project-images-right'>
+                <img src="./images/cliquer.png", height='400'>
+              </div>
+            </div>
+
             <div class = 'project' id='grubmeet'>
               <div class = 'project-info-left'>
                 <div class='project-title'>
@@ -102,7 +138,7 @@
                 </div>
 
                 <div class='project-description'>
-                  <h6>If you've ever visited General Assembly, it's hard not to notice their massive job boards that sit in the lobbies of their workspaces. As someone who checked the board regularly, I decided to create a digital version. The job cards you see on the site are nearly identical to those you can find at GA.<br><br>The online GA Search Engine limits registration to only those affiliated with GA, thus preserving the tight-knit community aspect of the offline version. THIS IS NOT AN ACTUAL GENERAL ASSEMBLY PRODUCT, just a fun project I worked on in GA's WDI class. If you'd like to see what's behind the curtain, use code '1234' when registering.</h6>
+                  <h6>If you've ever visited General Assembly, it's hard not to notice their massive job boards that sit in the lobbies of their workspaces. As someone who checked the board regularly, I decided to create a digital version. The job cards you see on the site are nearly identical to those you can find at GA.<br><br>The online GA Search Engine limits registration to only those affiliated with GA, thus preserving the tight-knit community aspect of the offline version. THIS IS NOT AN ACTUAL GENERAL ASSEMBLY PRODUCT, just a fun project I worked on in GA's WDI class.</h6>
                 </div>
 
               </div>
@@ -110,25 +146,6 @@
                 <img src="./images/ga_search_screenshot.png", height='400'>
               </div>
             </div>
-
-            <div class = 'project in-view' id='first-class'>
-              <div class = 'project-info-left'>
-                <div class='project-title'>
-                  <h1>FIRST CLASS AIRLINES</h1>
-                </div>
-
-                <div class='project-description'>
-                  <h6>This application handles both client-side and admin-side functionality for fake airline FirstClass. Three teammates and I worked to build out the web app which simulates some of the basic functions that an actual airline would utilize on its web sites. Our app allows admins to manage a plane inventory and flight schedule. Non-admin users are able to book flights and reserve seats using a nifty hand-made seat picking chart.</h6>
-
-                  <a href='http://quiet-island-8862.herokuapp.com/'>FirstClass Airlines <img src='images/link.png' width='15px;'></a>
-                </div>
-
-              </div>
-              <div class='project-images-right'>
-                <img src="./images/first_class.png", height='400'>
-              </div>
-            </div>
-
 
             <div class = 'project' id='globetrotter'>
               <div class = 'project-info-left'>
@@ -158,16 +175,21 @@
             <h3>contact</h3>
           </div>
           <div class='section-content'>
-            <h3>Interested in working with me? Drop me a note!</h3>
-            <a href="mailto:rlee1121@gmail.com">Email Me</a>
+            <div class='social-img'></div>
+            <div class='social-info'>
+              <h3>Interested in working with me? Drop me a note!</h3>
+              <a href="mailto:rlee1121@gmail.com">GET IN TOUCH</a>
+            </div>
+
 
 
           </div>
         </section>
 
+
       </div>
     </div>
-
+    <p id = 'footer'>&#169&nbsp;&nbsp; 2013&nbsp;&nbsp;&nbsp;&nbsp;RYAN&nbsp;&nbsp;LEE.</p>
   </div>
 
 </body>
