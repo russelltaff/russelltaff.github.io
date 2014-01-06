@@ -1,12 +1,12 @@
-
+/*
 @import url(http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps);
 @import url(http://fonts.googleapis.com/css?family=Lato);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:800italic,400);
 
 @import url(http://fonts.googleapis.com/css?family=Fugaz+One);
-@import url(http://fonts.googleapis.com/css?family=Sanchez);
+@import url(http://fonts.googleapis.com/css?family=Sanchez);*/
 
-@font-face{
+/*@font-face{
   font-family: 'MyWebFont1';
   src: url('webfontkit-bebas/bebasneue-webfont.eot');
   src: url('webfontkit-bebas/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
@@ -22,8 +22,20 @@
        url('webfontkit-chunkfive/chunkfive-webfont.woff') format('woff'),
        url('webfontkit-chunkfive/chunkfive-webfont.ttf') format('truetype'),
        url('webfontkit-chunkfive/chunkfive-webfont.svg#webfont') format('svg');
-}
+}*/
 
+
+@font-face {
+    font-family: 'sansationregular';
+    src: url('sansation-regular-webfont.eot');
+    src: url('sansation-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sansation-regular-webfont.woff') format('woff'),
+         url('sansation-regular-webfont.ttf') format('truetype'),
+         url('sansation-regular-webfont.svg#sansationregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 .clear
 {
   clear: both;
@@ -38,7 +50,7 @@
 
 #background
 {
-  background: url('../images/rave.png') fixed;
+  background: url('../images/background.png') fixed;
   width: 100%;
   background-size: cover;
   /*background-attachment:fixed;*/
@@ -69,8 +81,8 @@
 
 #title h1
 {
-
-  font-family: 'Oleo Script Swash Caps';
+/*
+  font-family: 'Oleo Script Swash Caps';*/
   font-size: 135px;
   margin: 0 auto;
 
@@ -78,7 +90,7 @@
   margin-bottom: 10px;
   color: white;
   -webkit-user-select: none;
-  text-shadow: 4px 2px 3px rgba(255,0,0,0.8), -4px -2px 3px rgba(0,255,255,0.8), 0px 5px 3px rgba(0,0,0,0.7);
+  text-shadow: 4px 4px 3px rgba(86, 74, 66, 1.0), -4px -2px 3px rgba(86, 74, 66, 1.0), 0px 5px 3px rgba(86, 74, 66, 1.0);
 }
 
 #title h3
@@ -96,7 +108,7 @@
 
 #social-icon-container
 {
-  width: 300px;
+  width: 500px;
   height: 80px;
   margin: 0 auto;
   text-align: center;
@@ -113,8 +125,7 @@
   width: 60px;
   height:60px;
   display:inline-block;
-  background: transparent url('../images/github-3-64.png') center no-repeat;
-  opacity: 0.7;
+  background: transparent url('../images/github-6-64.png') center no-repeat;
 
 }
 
@@ -124,8 +135,7 @@
   height:60px;
   margin: 14px;
   display: inline-block;
-  background: transparent url('../images/linkedin-3-64.png') center no-repeat;
-  opacity: 0.7;
+  background: transparent url('../images/linkedin-64.png') center no-repeat;
 }
 #social-icon-container #instagram
 {
@@ -133,8 +143,17 @@
   height:60px;
   margin: 14px;
   display: inline-block;
-  background: transparent url('../images/instagram-3-64.png') center no-repeat;
-  opacity: 0.7;
+  background: transparent url('../images/instagram-6-48.png') center no-repeat;
+}
+
+#social-icon-container #twitter
+{
+  margin: 14px;
+  width: 60px;
+  height:60px;
+  display:inline-block;
+  background: transparent url('../images/twitter-64.png') center no-repeat;
+
 }
 
 #social-icon-container #github:hover
@@ -144,7 +163,7 @@
   width: 60px;
   height:60px;
   display:inline-block;
-  border: 3px solid cyan;
+  border: 3px solid green;
   border-radius: 10px;
 }
 
@@ -155,7 +174,7 @@
   height:60px;
   margin: 11px;
   display:inline-block;
-  border: 3px solid cyan;
+  border: 3px solid green;
   border-radius: 10px;
 }
 #social-icon-container #instagram:hover
@@ -165,10 +184,19 @@
   height:60px;
   margin: 11px;
   display:inline-block;
-  border: 3px solid cyan;
+  border: 3px solid green;
   border-radius: 10px;
 }
-
+#social-icon-container #twitter:hover
+{
+  opacity: 1.0;
+  width: 60px;
+  height:60px;
+  margin: 11px;
+  display:inline-block;
+  border: 3px solid green;
+  border-radius: 10px;
+}
 nav
 {
   background-color: rgba(0,0,0,1.0);
@@ -177,8 +205,8 @@ nav
   height: 28px;
   text-align: center;
   /*text-align: right;*/
-  border-top: 2px solid red;
-  border-bottom: 2px solid cyan;
+  border-top: 2px solid green;
+  border-bottom: 2px solid green;
   position: relative;
   box-shadow: 0px 3px 5px rgba(10,10,10, 0.8);
   z-index: 2;
@@ -288,14 +316,15 @@ a .hover {
 {
   padding-top: 150px;
   text-align: center;
-  background: url('../images/subtlepattern.png');
+  background: url('../images/tiny_grid.png');
   background-color: rgba(204, 204, 204, 1.0);
 }
 
 .content-section#portfolio
 {
 
-  background: url('../images/diagmonds_@2X.png');
+  background: url('../images/dirty_old_shirt.png');
+
 }
 
 .project{
@@ -345,7 +374,7 @@ a .hover {
 }
 
 #portfolio-options h5 {
-  color: cyan;
+  color: green;
   font-family: 'Lato';
   font-size: 20px;
 }
@@ -359,8 +388,8 @@ a .hover {
 }
 
 #portfolio-options span.selected{
-  /*border-top: 2px solid red;*/
-  border-bottom: 2px solid cyan;
+  /*border-top: 2px solid green;*/
+  border-bottom: 2px solid green;
   color: white;
 
 /*  border-left:  1px solid cyan;
@@ -379,17 +408,19 @@ a .hover {
   font-weight: 100;
   color: #000000;
   font-size: 65px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 2em;
 }
 
-#about .section-content h5
+/*#about .section-content h5
 {
   font-family: "Lato" sans-serif;
   font-weight: 100;
   color: #000000;
   font-size: 22px;
   margin-bottom: 25px;
-}
+  padding-bottom: 10em;
+}*/
 
 #about-paragraph{
   width: 75%;
@@ -405,6 +436,18 @@ a .hover {
   font-size: 16px;
   margin-top: 25px;
   padding-bottom: 50px;
+}
+
+#about .social-img {
+  display: inline-block;
+  float: center;
+  border-radius: 100px;
+  margin-bottom: 2em;
+  width: 200px;
+  height: 200px;
+  background: url("../images/rt2.png") center no-repeat #e8dee1;
+  background-size: 200px 200px;
+  box-shadow: inset 0px 0px 20px rgba(0,0,0,0.9);
 }
 
 #photo_circle_container
@@ -440,14 +483,14 @@ box-shadow: inset 0px 0px 20px rgba(0,0,0,0.9);
 }
 
 .photo_circle.duke{
-  background: url("../images/duke_logo.png") center no-repeat #e8dee1;
+  background: url("../images/NULogo2.png") center no-repeat #e8dee1;
   background-size: 90px 90px;
   -webkit-filter: grayscale(0.9);
 }
 
 .photo_circle.new_york
 {
-  background: url("http://maps.googleapis.com/maps/api/staticmap?center=10014&style=visibility:simplified&gamma:1.0&inverse_lightness:true&element:geometry.fill%7Chue:0x000000&zoom=11&maptype=terrain&size=400x400&markers=size:large%7Ccolor:red%7Clabel:NYC%7CNew+York,NY&sensor=false") center no-repeat #e8dee1;
+  background: url("../images/brooklyn.jpg") center no-repeat #e8dee1;
   -webkit-filter: grayscale(0.9);
 }
 
@@ -508,7 +551,7 @@ box-shadow: inset 0px 0px 20px rgba(0,0,0,0.9);
 }
 
 .project-info-left a {
-  color: cyan;
+  color: green;
   font-size: 12px;
 }
 
@@ -530,16 +573,8 @@ box-shadow: inset 0px 0px 20px rgba(0,0,0,0.9);
   margin-bottom: 3em;
 }
 
-#social .social-img {
-  display: inline-block;
-  float: left;
-  border-radius: 100px;
-  width: 200px;
-  height: 200px;
-  background: url("../images/rl.png") center no-repeat #e8dee1;
-  background-size: 200px 200px;
-  box-shadow: inset 0px 0px 20px rgba(0,0,0,0.9);
-}
+
+
 #social .social-info {
   display: inline-block;
   float: left;
