@@ -197,11 +197,6 @@ nav li
   color: #ffffff;
 }
 
-nav li .hover{
-  color: green;
-  text-decoration: none;
-  text-shadow: 3px 0px 1px rgba(255,0,0,0.7), -3px 0px 1px rgba(0,255,255,0.7);
-}
 
 #first_nav{
   padding-left: 60px;
@@ -217,11 +212,6 @@ nav li .hover{
   margin-top: 10px;
 }
 
-li#navigation-bar .hover{
-  color: green;
-  text-decoration: none;
-  text-shadow: 3px 0px 1px rgba(255,0,0,0.7), -3px 0px 1px rgba(0,255,255,0.7);
-}
 
 a#logo-link
 {
@@ -467,9 +457,8 @@ box-shadow: inset 0px 0px 20px rgba(0,0,0,0.9);
   -webkit-filter: grayscale(0.9);
 }
 
-.photo_circle.brooklyn
-{
-  background: url("../images/brooklyn.jpg") center no-repeat #e8dee1;
+.photo_circle.brooklyn{
+  background: url("../images/brooklyn.png") center no-repeat #e8dee1;
   -webkit-filter: grayscale(0.9);
 }
 

@@ -1,11 +1,11 @@
 $(document).ready(function(){
 
-  $('.photo_circle.duke').mouseenter(highlight_photo);
-  $('.photo_circle.duke').mouseleave(unhighlight_photo);
+  $('.photo_circle.northwestern').mouseenter(highlight_photo);
+  $('.photo_circle.northwestern').mouseleave(unhighlight_photo);
   $('.photo_circle.ga').mouseenter(highlight_photo);
   $('.photo_circle.ga').mouseleave(unhighlight_photo);
-  $('.photo_circle.new_york').mouseenter(highlight_map);
-  $('.photo_circle.new_york').mouseleave(unhighlight_map);
+  $('.photo_circle.brooklyn').mouseenter(highlight_map);
+  $('.photo_circle.brooklyn').mouseleave(unhighlight_map);
   $('#portfolio-options span').click(filter_projects);
 
 
@@ -41,11 +41,11 @@ $(document).ready(function(){
 })
 
 function highlight_photo() {
-  $(this).addClass('dukega_hover', 100);
+  $(this).addClass('northwesternga_hover', 100);
   $(this).children('h6').first().fadeIn('medium');
 }
 function unhighlight_photo() {
-  $(this).removeClass('dukega_hover', 100);
+  $(this).removeClass('northwesternga_hover', 100);
   $(this).children('h6').first().fadeOut('med');
 }
 function highlight_map() {
