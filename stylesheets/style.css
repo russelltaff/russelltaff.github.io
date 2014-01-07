@@ -413,6 +413,7 @@ a .hover {
   background: url("../images/rt2.jpg") center no-repeat darkgreen;
   background-size: 200px 200px;
   border-collapse: 2em;
+  z-index: 0;
   box-shadow: inset 0px 0px 20px rgba(0,0,0,0.9);
 }
 
@@ -437,7 +438,10 @@ float: left;
 box-shadow: inset 0px 0px 20px rgba(0,0,0,0.9);
 }
 
-.photo_circle img{z-index: 0;}
+.photo_circle img{
+  z-index: 3;
+}
+
 .section-content .photo_circle > h6{
   font-size: 16px;
   margin-top: 5.0em;
@@ -520,13 +524,41 @@ box-shadow: inset 0px 0px 20px rgba(0,0,0,0.9);
   font-size: 12px;
 }
 
-.project-images-right
-{
+.project-images-right{
   margin-left: 0px;
   display: inline-block;
   width: 55%;
 }
 
+
+#info1{
+  float: left;
+  display:inline-block;
+  padding-left: 10em;
+  font-family: 'Lato';
+  padding-bottom: 1em;
+  font-weight: bold;
+  font-size:20px;
+}
+
+#info2{
+  float: center;
+   display:inline-block;
+   font-family: 'Lato';
+   padding-bottom: 1em;
+   font-weight: bold;
+   font-size:20px;
+}
+
+#info3{
+  float:right;
+   display:inline-block;
+   padding-right: 10em;
+   font-family: 'Lato';
+   padding-bottom: 1em;
+   font-weight: bold;
+   font-size:20px;
+}
 
 #social .section-content { 
   display: inline-block; 
