@@ -79,6 +79,10 @@
   display: inline-block;
 }
 
+
+
+
+
 #social-icon-container
 {
   width: 500px;
@@ -383,7 +387,7 @@ a .hover {
   color: #000000;
   font-size: 65px;
   margin-bottom: 20px;
-  padding-bottom: 2em;
+
 }
 
 
@@ -402,6 +406,17 @@ a .hover {
   margin-top: 25px;
   padding-bottom: 50px;
 }
+
+#about .section-content h5
+{
+  font-family: "Lato" sans-serif;
+  font-weight: 100;
+  color: #000000;
+  font-size: 22px;
+  padding-bottom: 2em;
+ 
+}
+
 
 #about .social-img {
   display: inline-block;
@@ -534,7 +549,7 @@ box-shadow: inset 0px 0px 20px rgba(0,0,0,0.9);
 #info1{
   float: left;
   display:inline-block;
-  padding-left: 10em;
+  padding-left: 16em;
   font-family: 'Lato';
   padding-bottom: 1em;
   font-weight: bold;
@@ -553,7 +568,7 @@ box-shadow: inset 0px 0px 20px rgba(0,0,0,0.9);
 #info3{
   float:right;
    display:inline-block;
-   padding-right: 10em;
+   padding-right: 13em;
    font-family: 'Lato';
    padding-bottom: 1em;
    font-weight: bold;
@@ -570,6 +585,7 @@ box-shadow: inset 0px 0px 20px rgba(0,0,0,0.9);
   font-family: 'Lato';
   font-size: 24px;
   margin-bottom: 3em;
+  display:inline-block;
   color: white;
 }
 
