@@ -397,9 +397,8 @@ border-right:  1px solid cyan;*/
   width: 220px;
   height: 220px;
   background: url("../images/rt2.jpg") center no-repeat darkgreen;
-  background-size: 200px 200px;
+  background-size: 220px 240px;
   border-collapse: 2em;
-  z-index: 0;
   box-shadow: inset 0px 0px 20px rgba(0,0,0,0.9);
 }
 
