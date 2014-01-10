@@ -168,8 +168,8 @@ nav{
   height: 25px;
   text-align: center;
   /*text-align: right;*/
-  border-top: 2.5px solid green;
-  border-bottom: 2.5px solid green;
+  border-top: 2.5px solid #1c3601;
+  border-bottom: 2.5px solid #1c3601;
   position: relative;
   box-shadow: 0px 3px 5px rgba(10,10,10, 0.8);
   z-index: 2;
@@ -369,9 +369,12 @@ border-right:  1px solid cyan;*/
 }
 
 
-#about-paragraph {
+#about-paragraph p{
   width: 75%;
   margin: 0 auto;
+  font-family: "Lato" sans-serif;
+  line-height: 30px;
+
 }
 
 #about .section-content p {
@@ -585,7 +588,7 @@ PERSONAL INFO*/
 
 #social .section-content a {
   padding: 15px 35px;
-  background-color: #005C00;
+  background-color: #1c3601;
   border-radius:50px;
   border: 3px solid rgb(210,210,210);
   opacity:7%;
@@ -611,12 +614,13 @@ PERSONAL INFO*/
 
 
 .full-stack:hover {
-  color:#005C00;
+  color:#1c3601;
+ 
 
 }
 
 .product-manager:hover{
-  color:#005C00;
+  color:#1c3601;
 }
 
 
