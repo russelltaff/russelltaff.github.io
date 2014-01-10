@@ -58,6 +58,7 @@
   margin-top: 40px;
   text-shadow: 20px 20px 20px rgba(12,20,20,0.7);
   display: inline-block;
+  padding-bottom: 7em;
 }
 
 #social-icon-container{
@@ -609,7 +610,14 @@ PERSONAL INFO*/
 }
 
 
+.full-stack:hover {
+  color:darkgreen;
 
+}
+
+.product-manager:hover{
+  color:darkgreen;
+}
 
 
 

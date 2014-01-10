@@ -1,12 +1,34 @@
 $(document).ready(function(){
 
-  $('.photo_circle.northwestern').mouseenter(highlight_photo);
-  $('.photo_circle.northwestern').mouseleave(unhighlight_photo);
   $('.photo_circle.ga').mouseenter(highlight_photo);
   $('.photo_circle.ga').mouseleave(unhighlight_photo);
-  $('.photo_circle.brooklyn').mouseenter(highlight_map);
-  $('.photo_circle.brooklyn').mouseleave(unhighlight_map);
   $('#portfolio-options span').click(filter_projects);
+
+  $("#about_link").click(function(){
+ $('html, body').animate({
+   scrollTop: $("#about").offset().top
+ })
+});
+   $("#last_nav").click(function(){
+ $('html, body').animate({
+   scrollTop: $("#social").offset().top
+ })
+});
+    $("#portfolio_nav").click(function(){
+ $('html, body').animate({
+   scrollTop: $("#portfolio").offset().top
+ })
+});
+  $("#homelink_project").click(function(){
+ $('html, body').animate({
+   scrollTop: $("#portfolio").offset().top
+ })
+});
+  $("#homelink_product").click(function(){
+ $('html, body').animate({
+   scrollTop: $("#about").offset().top
+ })
+});
 
 
   $(window).scroll(function(){
@@ -48,14 +70,6 @@ function unhighlight_photo() {
   $(this).removeClass('northwesternga_hover', 100);
   $(this).children('h6').first().fadeOut('med');
 }
-function highlight_map() {
-  $(this).addClass('map_hover', 200);
-  $(this).children('h6').first().fadeIn('medium');
-}
-function unhighlight_map() {
-  $(this).removeClass('map_hover', 200);
-  $(this).children('h6').first().fadeOut('medium');
-}
 
 function filter_projects() {
   $('.selected').removeClass('selected', 500);
@@ -64,6 +78,7 @@ function filter_projects() {
   $('.project.in-view').hide('slide', {direction: 'right'}, 500).removeClass('in-view');
   $('#'+id).addClass('in-view').delay(300).show('slide', {direction: 'left'}, 900);
 }
+
 
 
 
