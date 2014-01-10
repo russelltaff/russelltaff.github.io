@@ -345,7 +345,7 @@ a .hover {
 #portfolio-options span.selected {
   /*border-top: 2px solid green;*/
   border-bottom: 2.5px solid green;
-  color: brown;
+  color: #005C00;
   font-size: 30px;
 
 /*  border-left:  1px solid cyan;
@@ -402,8 +402,8 @@ border-right:  1px solid cyan;*/
   width: 220px;
   height: 220px;
   border: 6px solid rgb(210,210,210);
-  background: url("../images/rt2.jpg") center no-repeat darkgreen;
-  background-size: 220px 240px;
+  background: url("../images/rt2.jpg") center no-repeat #005C00;
+  background-size: 220px 280px;
   border-collapse: 2em;
   box-shadow: inset 0px 0px 20px rgba(0,0,0,0.9);
 }
@@ -509,7 +509,7 @@ border-right:  1px solid cyan;*/
 }
 
 .project-info-left a {
-  color: green;
+  color: #005C00;
   font-size: 12px;
 }
 
@@ -585,7 +585,7 @@ PERSONAL INFO*/
 
 #social .section-content a {
   padding: 15px 35px;
-  background-color: darkgreen;
+  background-color: #005C00;
   border-radius:50px;
   border: 3px solid rgb(210,210,210);
   opacity:7%;
@@ -611,12 +611,12 @@ PERSONAL INFO*/
 
 
 .full-stack:hover {
-  color:darkgreen;
+  color:#005C00;
 
 }
 
 .product-manager:hover{
-  color:darkgreen;
+  color:#005C00;
 }
 
 
