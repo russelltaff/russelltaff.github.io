@@ -39,25 +39,28 @@
 }
 
 #title h1{
-  font-size: 135px;
+  font-size: 190px;
   margin: 0 auto;
-  margin-top: 238px;
+  margin-top: 215px;
   margin-bottom: 10px;
   color: white;
   -webkit-user-select: none;
   text-shadow: 2px 4px 3px rgba(86, 74, 66, 1.0), -4px -2px 3px rgba(86, 74, 66, 1.0), 0px 5px 3px rgba(86, 74, 66, 1.0);
+
 }
 
 #title h3{
   font-family: 'Lato', sans-serif;
   font-size: 30px;
   font-weight: bold;
-  color: white;
+  color: black;
   -webkit-user-select: none;
   margin-bottom: 44px;
   margin-top: 40px;
   text-shadow: 20px 20px 20px rgba(12,20,20,0.7);
   display: inline-block;
+  margin: 0 auto;
+  padding-top:7em;
   padding-bottom: 7em;
 }
 
@@ -455,11 +458,6 @@ border-right:  1px solid cyan;*/
   -webkit-filter: grayscale(0.9);
 }
 
-/*.photo_circle.ga a{
-  width: 100%;
-  height: 100%;
-}*/
-
 
 .photo_circle.northwesternga_hover { 
   -webkit-filter: grayscale(0); 
@@ -610,16 +608,16 @@ PERSONAL INFO*/
 }
 
 
-
-
 .full-stack:hover {
   color:#1c3601;
- 
-
 }
 
 .product-manager:hover{
   color:#1c3601;
+}
+
+.contact:hover{
+  color:#1c3601
 }
 
 footer {
