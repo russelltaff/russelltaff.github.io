@@ -24,11 +24,10 @@
   background: url('../images/brooklyn.png') fixed;
   width: 100%;
   background-size: cover;
-  /*background-attachment:fixed;*/
   overflow:scroll;
-  /*position: relative;*/
-  margin: 0 auto;
-  padding: 10px;
+/*  position: relative;
+*/  
+margin: 0 auto;
 }
 
 
