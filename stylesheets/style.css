@@ -24,9 +24,9 @@
   background: url('../images/Brooklyn.png') fixed;
   width: 100%;
   background-size: cover;
+  /*background-attachment:fixed;*/
   overflow:scroll;
-/*  position: relative;
-*/  
+/*  position: relative;*/  
   margin: 0 auto;
 }
 
