@@ -21,13 +21,13 @@
 }
 
 #background{
-  background: url('../images/brooklyn.png') fixed;
+  background: url('../images/Brooklyn.png') fixed;
   width: 100%;
   background-size: cover;
   overflow:scroll;
 /*  position: relative;
 */  
-margin: 0 auto;
+  margin: 0 auto;
 }
 
 
