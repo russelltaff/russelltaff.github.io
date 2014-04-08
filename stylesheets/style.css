@@ -45,7 +45,7 @@
   margin-bottom: 10px;
   color: white;
   -webkit-user-select: none;
-  text-shadow: 2px 4px 3px rgba(86, 74, 66, 1.0), -4px -2px 3px rgba(86, 74, 66, 1.0), 0px 5px 3px rgba(86, 74, 66, 1.0);
+  text-shadow: 2px 4px 3px darkgreen, -4px -2px 3px rgba(86, 74, 66, 1.0), 0px 5px 3px rgba(86, 74, 66, 1.0);
 
 }
 
