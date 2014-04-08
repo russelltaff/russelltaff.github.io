@@ -23,10 +23,10 @@
 #background{
   background: url('../images/wood.png') fixed;
   width: 100%;
-  background-size: cover;
+  background-size: stretch;
   /*background-attachment:fixed;*/
   overflow:scroll;
-/*  position: relative;*/  
+  position: relative;  
   margin: 0 auto;
 }
 
