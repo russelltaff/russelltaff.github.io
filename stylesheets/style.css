@@ -23,11 +23,11 @@
 #background{
   background: url('../images/background.png') fixed;
   width: 100%;
-  background-size: stretch;
+  background-size: cover;
   /*background-attachment:fixed;*/
   overflow:scroll;
-  position: relative;  
-  margin: 0 auto;
+/*  position: relative;  
+*/  margin: 0 auto;
 }
 
 
@@ -121,6 +121,15 @@
   display:inline-block;
   background: transparent url('../images/twitter-64.png') center no-repeat;
 
+
+}
+
+#social-icon-container #soundcloud{
+  margin: 14px;
+  width: 60px;
+  margin: 14px;
+  display: inline-block;
+  background: transparent url('../images/soundcloud-3-64.png') center no-repeat;
 
 }
 
