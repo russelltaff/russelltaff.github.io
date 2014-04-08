@@ -21,7 +21,7 @@
 }
 
 #background{
-  background: url('../images/wood.png') fixed;
+  background: url('../images/background.png') fixed;
   width: 100%;
   background-size: stretch;
   /*background-attachment:fixed;*/
@@ -155,6 +155,16 @@
 }
 
 #social-icon-container #twitter:hover{
+  opacity: 1.0;
+  width: 60px;
+  height:60px;
+  margin: 11px;
+  display:inline-block;
+  border: 3px solid green;
+  border-radius: 10px;
+}
+
+#social-icon-container #soundcloud:hover{
   opacity: 1.0;
   width: 60px;
   height:60px;
